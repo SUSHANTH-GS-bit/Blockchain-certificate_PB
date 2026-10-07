@@ -4,19 +4,6 @@ A blockchain built from scratch in Python that stores certificate and marks reco
 hash-linked blocks, with a Flask dashboard where judges edit a block and see exactly which
 hash no longer matches. Records are kept in a SQLite database, so they survive a restart.
 
-## 1. Run it (2 minutes)
-
-```bash
-pip install -r requirements.txt
-python app.py              # then open http://127.0.0.1:5000
-python app.py --seed       # optional: also loads the 12 sample certificates on start
-```
-
-Run the tests (25 tests): `python -m unittest -v`
-
-Environment variables (optional): `CHAINCERT_DB` (database file path), `PORT` (default 5000).
-
-## 2. What is new in this version
 
 | # | Feature | Where |
 |---|---|---|
@@ -26,7 +13,7 @@ Environment variables (optional): `CHAINCERT_DB` (database file path), `PORT` (d
 | 4 | **Persistent storage** in SQLite. Blocks, tampering and the activity log all survive a Flask restart. | `storage.py` |
 | 5 | **`requirements.txt`** | `requirements.txt` |
 
-## 3. Files
+
 
 | File | Purpose |
 |---|---|
